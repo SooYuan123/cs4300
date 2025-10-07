@@ -5,19 +5,19 @@ The project is located inside the cs4300/homework2 directory and contains one pr
 
 cs4300/
 └── homework2/
-    ├── bookings/              # The core Django application
-    ├── movie_theater_booking/ # Project settings, URLs (project-level)
-    ├── manage.py              # Django management script
-    ├── requirements.txt       # Project dependencies
-    ├── build.sh               # Render deployment script
-    └── README.md              # README file
+    ├── bookings/              # The core Django application  
+    ├── movie_theater_booking/ # Project settings, URLs (project-level)  
+    ├── manage.py              # Django management script  
+    ├── requirements.txt       # Project dependencies  
+    ├── build.sh               # Render deployment script  
+    └── README.md              # README file  
 # 2. Local Setup and Running
 The project requires Python 3.12+ and several packages, including Django, DRF, Gunicorn, and WhiteNoise.
 
 2.1. Initial Setup (If starting fresh)
 Navigate to the project root:
 cd /home/student/cs4300/homework2  
-<br>
+
 Create and activate the virtual environment:
 python3 -m venv venv --system-site-packages
 source venv/bin/activate
