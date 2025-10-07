@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'editor-kongsooyuan-20.devedu.io', # The host causing the error
-    'app-containerName-SectionID.devedu.io', # General DevEdu "App" format (replace with your specific app URL if different)
+    'app-kongsooyuan-20.devedu.io', # General DevEdu "App" format (replace with your specific app URL if different)
     '0.0.0.0', # The IP Django is listening on
     '127.0.0.1', # Localhost
 ]
@@ -43,6 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'bookings',
+]
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://app-kongsooyuan-20.devedu.io',
+    'https://editor-kongsooyuan-20.devedu.io',
 ]
 
 # Add REST framework configuration
