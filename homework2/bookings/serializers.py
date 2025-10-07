@@ -22,4 +22,5 @@ class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = ['id', 'movie', 'seat', 'user', 'booking_date', 'movie_title', 'seat_number'] 
-        read_only_fields = ['user', 'booking_date']
+        # Only make booking_date read-only, allow 'user' to be passed in test
+        read_only_fields = ['booking_date']

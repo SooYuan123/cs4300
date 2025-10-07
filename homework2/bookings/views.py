@@ -13,7 +13,7 @@ class MovieViewSet(viewsets.ModelViewSet):
 
 # Seat ViewSet: For seat availability and booking
 class SeatViewSet(viewsets.ModelViewSet):
-    queryset = Seat.objects.all()
+    queryset = Seat.objects.filter(booking_status=False)
     serializer_class = SeatSerializer
     permission_classes = [AllowAny]
 

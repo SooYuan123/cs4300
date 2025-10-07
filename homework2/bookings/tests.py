@@ -43,6 +43,8 @@ class APITestCase(TestCase):
     def setUp(self):
         self.client = APIClient()
         self.user = User.objects.create_user(username='apiuser', password='apipassword')
+        # Authenticate the client with the test user
+        self.client.force_authenticate(user=self.user)
         self.movie = Movie.objects.create(
             title="API Movie",
             description="API test.",
