@@ -16,8 +16,8 @@ The project requires Python 3.12+ and several packages, including Django, DRF, G
 
 2.1. Initial Setup (If starting fresh)
 Navigate to the project root:
-cd /home/student/cs4300/homework2
-
+cd /home/student/cs4300/homework2  
+<br>
 Create and activate the virtual environment:
 python3 -m venv venv --system-site-packages
 source venv/bin/activate
