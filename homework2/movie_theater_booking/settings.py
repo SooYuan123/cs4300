@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-j(2ok0spv4sl+&bv#%8$h=sp^=!)e#@*1ilf5ih3=h^1jjm^21
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'editor-kongsooyuan-20.devedu.io', # The host causing the error
-    'app-kongsooyuan-20.devedu.io', # General DevEdu "App" format (replace with your specific app URL if different)
+    'editor-kongsooyuan-20.devedu.io',
+    'app-kongsooyuan-20.devedu.io',
     '0.0.0.0', # The IP Django is listening on
     '127.0.0.1', # Localhost
 ]
