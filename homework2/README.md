@@ -86,7 +86,7 @@ PYTHON_VERSION: 3.12.3 (or current version)
 3.4 **SPECIFIC RENDER URL**
 https://cs4300-x0k0.onrender.com
 
-#4. AI Usage Statement
+# 4. AI Usage Statement
 This project was developed with the aid of the Gemini model. Gemini was utilized for:
 
 Answering questions and confusions through out constructing the project.
