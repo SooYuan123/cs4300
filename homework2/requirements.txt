@@ -3,7 +3,6 @@ Brotli==1.1.0
 dj-database-url==3.0.1
 Django==4.2.11
 djangorestframework==3.16.1
-gyp==0.1
 psycopg2-binary==2.9.10
 pytz==2024.1
 setuptools==68.1.2
