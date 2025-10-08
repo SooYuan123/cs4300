@@ -76,7 +76,7 @@ Executes the setup script.
 Start Command: python -m gunicorn movie_theater_booking.wsgi:application  
 Runs the production web server.  
   
-**3.3. Environment Variables (Set on Render)** 
+**3.3. Environment Variables (Set on Render)**   
 DATABASE_URL: PostgreSQL Internal Connection String  
   
 SECRET_KEY: Secure, Generated Random String  
