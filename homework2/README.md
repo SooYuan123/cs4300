@@ -55,7 +55,7 @@ python3 manage.py test bookings
 # 3. Deployment Configuration (Render)  
 The application is configured for production deployment on Render using PostgreSQL and WhiteNoise.  
   
-**.1. Build Script (build.sh)**  
+**3.1. Build Script (build.sh)**  
 This script is executed by Render and performs the necessary production setup steps:  
   
 #!/usr/bin/env bash  
