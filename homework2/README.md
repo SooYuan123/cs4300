@@ -14,7 +14,7 @@ cs4300/
 # 2. Local Setup and Running  
 The project requires Python 3.12+ and several packages, including Django, DRF, Gunicorn, and WhiteNoise.  
   
-2.1. Initial Setup (If starting fresh)  
+**2.1. Initial Setup (If starting fresh)**  
 Navigate to the project root:  
 cd /home/student/cs4300/homework2   
   
@@ -31,7 +31,7 @@ python3 manage.py migrate
 Create Superuser: Needed for admin access and local user logic.  
 python3 manage.py createsuperuser  
   
-2.2. Running the Application  
+**2.2. Running the Application**  
 Ensure virtual environment is active (source venv/bin/activate).  
   
 Start the development server:  
@@ -39,7 +39,7 @@ python3 manage.py runserver 0.0.0.0:3000
   
 Access: Open the DevEdu "App" link (e.g., https://app-kongsooyuan-20.devedu.io/). 
   
-2.3. Testing the Application  
+**2.3. Testing the Application**  
 Add Initial Data: Log in to the Admin interface (/admin/) and add at least one Movie and several available Seats.  
   
 Web UI: Verify the full flow: / (Movie List) -> book/<id>/ (Seat Booking) -> /history/ (Booking History).  
@@ -55,7 +55,7 @@ python3 manage.py test bookings
 # 3. Deployment Configuration (Render)  
 The application is configured for production deployment on Render using PostgreSQL and WhiteNoise.  
   
-3.1. Build Script (build.sh)  
+**.1. Build Script (build.sh)**  
 This script is executed by Render and performs the necessary production setup steps:  
   
 #!/usr/bin/env bash  
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input  
 python manage.py migrate  
   
-3.2. Render Dashboard Settings  
+**3.2. Render Dashboard Settings**  
 Root Directory: cs4300/homework2  
 Points Render to the project folder.  
   
@@ -76,14 +76,14 @@ Executes the setup script.
 Start Command: python -m gunicorn movie_theater_booking.wsgi:application  
 Runs the production web server.  
   
-3.3. Environment Variables (Set on Render)  
+**3.3. Environment Variables (Set on Render)** 
 DATABASE_URL: PostgreSQL Internal Connection String  
   
 SECRET_KEY: Secure, Generated Random String  
   
 PYTHON_VERSION: 3.12.3 (or current version)  
   
-3.4 **SPECIFIC RENDER URL**  
+**3.4 SPECIFIC RENDER URL**  
 https://cs4300-x0k0.onrender.com  
   
 # 4. AI Usage Statement  
